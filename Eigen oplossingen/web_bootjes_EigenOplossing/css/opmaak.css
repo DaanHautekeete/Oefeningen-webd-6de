@@ -1,0 +1,31 @@
+body {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 1em;
+margin-top: 0.5em;
+margin-bottom: 2em;
+}
+
+/* Navigatie */
+
+/*submenu*/
+/* We voegen de nav toe aan onze selector want we willen dat het enkel toegepast word op de navigatie */
+nav li ul {
+    /* Dit zorgt ervoor dat het niet word weergegevne */
+    display: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 3em;
+}
+
+/* tijdelijk */
+ul {
+    border: solid 1px red;
+}
+
+#wrapper {
+width: 1080px;
+margin-left: auto;
+margin-right: auto;
+}
