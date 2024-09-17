@@ -1,3 +1,9 @@
+/* Alle elementen */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 1em;
@@ -7,21 +13,52 @@ margin-bottom: 2em;
 
 /* Navigatie */
 
+nav {
+    border-bottom: 3px solid red;
+}
+
+nav img {
+    margin-right: 25em;
+}
 /*submenu*/
 /* We voegen de nav toe aan onze selector want we willen dat het enkel toegepast word op de navigatie */
-nav li ul {
-    /* Dit zorgt ervoor dat het niet word weergegevne */
-    display: none;
+
+nav ul {
+    display: inline-block;
 }
 
 nav li {
     display: inline-block;
     margin-right: 3em;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.2em;
 }
 
-/* tijdelijk */
-ul {
-    border: solid 1px red;
+nav li ul {
+    /* Dit zorgt ervoor dat het niet word weergegevne */
+    display: none;
+
+}
+
+/* Header */
+header {
+    position: relative;
+}
+
+header img {
+    width: 100vw;
+}
+
+header p {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    font-size: 2.4em;
+    background-color: darkblue;
+    color: white;
+    width: 30%;
+    text-align: center;
 }
 
 #wrapper {
