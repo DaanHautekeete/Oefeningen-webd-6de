@@ -1,56 +1,112 @@
-/* Alle elementen */
-* {
+*{
     padding: 0;
     margin: 0;
+    font-size: 1em;
 }
 
 body {
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 1em;
-margin-top: 0.5em;
 margin-bottom: 2em;
 }
 
-/* Navigatie */
-
-nav {
-    border-bottom: 3px solid red;
+/* navigatie */
+nav{
+    border-bottom: solid 3px red;
+    padding-bottom: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
-
-nav img {
-    margin-right: 25em;
+nav img{
+    margin-right: 15em;
 }
-/*submenu*/
-/* We voegen de nav toe aan onze selector want we willen dat het enkel toegepast word op de navigatie */
-
-nav ul {
+nav ul{
     display: inline-block;
 }
 
-nav li {
+nav li{
     display: inline-block;
     margin-right: 3em;
     font-weight: bold;
     font-variant: small-caps;
     font-size: 1.2em;
-}
-
-nav li ul {
-    /* Dit zorgt ervoor dat het niet word weergegevne */
-    display: none;
-
-}
-
-/* Header */
-header {
     position: relative;
 }
 
-header img {
-    width: 100vw;
+nav li ul{
+    display: none;
+    padding-top: 0.8em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
 }
 
-header p {
+nav li:hover ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+
+    opacity: 0.8;
+}
+
+nav li:hover ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    display: block;
+    margin-right: 0;
+    border-bottom: red solid 1px;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* lelijk hoverkleur */
+nav li li:hover{
+    background-color: lightgoldenrodyellow;
+    font-weight: 800;
+}
+
+nav li:hover ul li:last-child{
+    border-bottom: none;
+}
+
+nav p{
+    border-radius: 50%;
+    width: 3.2em;
+    height: 3em;
+    background-color: red;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    border: solid 5px white;
+    padding-top: 2em;
+    padding-bottom: 1.2em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    position: absolute;
+    right: 2em;
+    bottom: -3em;
+}
+
+nav p:hover{
+    color: red;
+    background-color: white;
+    border-color: red;
+}
+
+/* Header img */
+header{
+    position: relative;
+}
+header img{
+    width: 100vw;
+}
+header p{
     position: absolute;
     right: 1em;
     bottom: 1em;
@@ -61,8 +117,11 @@ header p {
     text-align: center;
 }
 
+/* da wrapper */
 #wrapper {
 width: 1080px;
 margin-left: auto;
 margin-right: auto;
 }
+
+
