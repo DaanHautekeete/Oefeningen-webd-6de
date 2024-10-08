@@ -17,6 +17,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 20;
+    background-color: white;
 }
 nav img{
     margin-right: 15em;
@@ -139,9 +140,44 @@ margin-right: auto;
     margin-bottom: 20px;
 }
 
+#intro p {
+    font-size: x-large;
+}
+
 #intro hr {
-    margin:  auto ;
+    margin: 20px auto 50px auto ;
     border-color: red;
     width: 50%;
-    
+}
+
+/* Tickets */
+#tickets {
+    margin-bottom: 50px;
+}
+
+.Group {
+    width: 24%;
+    text-align: center;
+    font-size: larger;
+    display: inline-block;
+
+}
+
+.Group i {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+/* Aansluiten */
+#aansluiten {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#aansluiten .foto {
+    display: inline-block;
+}
+
+#aansluiten .tekst {
+    display: inline-block;    
 }
