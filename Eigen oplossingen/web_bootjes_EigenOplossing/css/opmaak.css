@@ -48,7 +48,6 @@ nav li:hover ul{
     left: 0;
     z-index: 100;
     background-color: white;
-
     opacity: 0.8;
 }
 
@@ -99,6 +98,11 @@ nav p:hover{
     border-color: red;
 }
 
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Header img */
 header{
     position: relative;
@@ -117,11 +121,27 @@ header p{
     text-align: center;
 }
 
-/* da wrapper */
+/* de wrapper */
 #wrapper {
-width: 1080px;
+width: 80%;
 margin-left: auto;
 margin-right: auto;
 }
 
+/* Intro */
+#intro {
+    text-align: Center;
+}
 
+#intro h1 {
+    font-size: xx-large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#intro hr {
+    margin:  auto ;
+    border-color: red;
+    width: 50%;
+    
+}
