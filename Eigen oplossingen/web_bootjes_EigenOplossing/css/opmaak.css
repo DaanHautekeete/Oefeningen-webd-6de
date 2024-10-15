@@ -155,7 +155,7 @@ margin-right: auto;
     margin-bottom: 50px;
 }
 
-.Group {
+.ticket {
     width: 24%;
     text-align: center;
     font-size: larger;
@@ -163,21 +163,91 @@ margin-right: auto;
 
 }
 
-.Group i {
+.ticket i {
     font-size: xx-large;
     margin-bottom: 20px;
 }
 
 /* Aansluiten */
-#aansluiten {
+#aansluiten, #groepen, #scholen {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 3em;
 }
 
-#aansluiten .foto {
+.foto {
     display: inline-block;
+    width: 55%;
+    
 }
 
-#aansluiten .tekst {
-    display: inline-block;    
+.foto img {
+    width: 100%;
+}
+
+.tekst {
+    display: inline-block;
+    width: 35%;
+    padding: 2em;
+    padding-top: 0;
+    font-size: 1.5em;
+    vertical-align: top;
+}
+
+.knop {
+    color: white;
+    background-color: red;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 25px;
+    margin-top: 2em;
+}
+
+/* Subtitles */
+.subtitle {
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+#groepen .tekst {
+    padding-left: 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0D4874;
+    color: white;
+    font-size: 0.9em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer h3 {
+    color: lightblue;
+    margin-bottom: 0.8em;
+}
+
+footer p{
+    margin-bottom: 0.4em;
+}
+
+/* Floating elementes liggen bovenop de parent */
+.foot {
+    float: left;
+    width: 23%;
+}
+
+
+.afsluiter {
+    /* Clear => eigenschap dat ervoor zorgt dat er geen floating element meer naast kan komen */
+    clear: both;
+    padding-top: 2em;
+}
+
+.afsluiter p {
+    display: inline-block;
+    margin-right: 3em;
 }
