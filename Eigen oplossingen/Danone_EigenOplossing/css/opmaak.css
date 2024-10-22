@@ -115,6 +115,9 @@ h1 {
   display: flex;
   justify-content: space-around;
   gap: 1em;
+
+  /* Alle items verticaal centreren */
+  align-items: center;
 }
 
 .journey img {
@@ -123,11 +126,9 @@ h1 {
 }
 
 .journeytext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 2em;
   width: 60%;
+  line-height: 1.5em;
 }
 
 .cta {
