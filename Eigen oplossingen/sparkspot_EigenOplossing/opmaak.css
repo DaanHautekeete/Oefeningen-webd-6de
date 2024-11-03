@@ -192,3 +192,61 @@ body {
     right: 1em;
     bottom: 1em;
 }
+
+/* Populaire bestemmingen */
+.popular-destinations {
+    background-color: #CFFFA2;
+    border-radius: 2em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+.popular-destinations p {
+    font-size: 1.6em;
+    font-family: CaviarDreams_Bold;
+
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+
+.destinations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination {
+    width: 16%;
+    position: relative;
+
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.destination .description {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+
+    /* We tonen de bestemmingen nog niet */
+    display: none;
+    position: absolute;
+
+    width: 100%;
+    left: 0;
+    bottom: 1em;
+
+    text-align: center;
+}
+
+/* Bestemming tonen bij interactie op de container van de bestemming */
+.destination:hover .description {
+    display: block;
+}
