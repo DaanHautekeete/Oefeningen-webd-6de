@@ -3,3 +3,106 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Lettertypes toevoegen */
+@font-face {
+    font-family: CaviarDreams;
+    src: url(./fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: CaviarDreams_Bold;
+    src: url(./fonts/CaviarDreams_Bold.ttf);
+}
+
+#wrapper {
+    width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu / navbar */
+#menu { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .logo {
+    width: fit-content;
+}
+
+#menu img {
+    width: 100%;
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 110%;
+    font-variant: small-caps;
+}
+
+#menu ul li a:hover {
+    color: black;
+    border-bottom: 5px solid #9FFF45;
+}
+
+
+/* Hero */
+#hero {
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero h2 {
+    font-family: CaviarDreams_Bold;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+
+}
+
+#hero .hero-text {
+    width: 54%;
+    font-size: 1.2em;
+}
+
+#hero .hero-image{
+    width: 22%;
+    gap: 0.8em;
+}
+
+
+#hero img {
+    width: 100%;
+}
+
+#hero .button {
+    background-color: #9FFF13;
+    color: black;
+    width: fit-content;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    
+
+    border-radius: 3em;
+
+    margin-top: 1em;
+}
