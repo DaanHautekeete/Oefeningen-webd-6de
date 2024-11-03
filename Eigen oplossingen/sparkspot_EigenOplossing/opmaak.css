@@ -20,6 +20,7 @@ body {
     src: url(./fonts/CaviarDreams_Bold.ttf);
 }
 
+/* Wrapper */
 #wrapper {
     width: 80%;
     margin-top: 1em;
@@ -106,6 +107,7 @@ body {
     margin-top: 1em;
 }
 
+/* How it works */
 .how-it-works {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -121,6 +123,72 @@ body {
 }
 
 .how-it-works h2 {
-    font-family: CaviarDreams_bold;
+    font-family: CaviarDreams_Bold;
     margin-bottom: 0.5em;
+}
+
+/* Zoek boek en parkeer */
+.zoek-boek-parkeer {
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.zoek-boek-parkeer h2 {
+    font-family: CaviarDreams_Bold;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.step-1, .step-2, .step-3 {
+    width: 32%;
+    border: 3px solid white;
+    border-radius: 2em;
+    padding: 1.5em;
+}
+
+.step-1 {
+    background-color: #9FFF45;
+    position: relative;
+}
+
+.step-2 {
+    background-color: #CFFFA2;
+    position: relative;
+}
+
+.step-3 {
+    background-color: #F3F4F6;
+    position: relative;
+}
+
+/* Randen van kleur veranderen als er interactie is */
+.step-1:hover {
+    border: 3px solid darkred;
+}
+
+.step-2:hover {
+    border: 3px solid darkred;
+}
+
+.step-3:hover {
+    border: 3px solid darkred;
+}
+
+/* Figuur niet zichtbaar maken */
+.step-1 img, .step-2 img, .step-3 img {
+    display: none;
+}
+
+/* Figuur laten verschijnen als er interactie is */
+/* We positioneren de foto ten opzichte van de parent waarvan de position relative is */
+.step-1:hover img, .step-2:hover img, .step-3:hover img {
+    display: block;
+    position: absolute;
+
+    /* We bepalen hier de positie */
+    right: 1em;
+    bottom: 1em;
 }
