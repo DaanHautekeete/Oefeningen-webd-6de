@@ -250,3 +250,39 @@ body {
 .destination:hover .description {
     display: block;
 }
+
+
+/* Aanbevelingen */
+.aanbevelingen {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.aanbevelingen h2 {
+    font-family: CaviarDreams_Bold;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.aanbevelingen p {
+    margin-bottom: 1em;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aanbeveling {
+    width: 24%;
+}
+
+.aanbeveling img {
+    border-radius: 2em;
+}
+
+.aanbeveling p {
+    font-weight: bold;
+    font-size: 0.9em;
+}
