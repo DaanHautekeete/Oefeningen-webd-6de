@@ -261,12 +261,14 @@ body {
 
 .aanbevelingen h2 {
     font-family: CaviarDreams_Bold;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 1em;
 }
 
 .aanbevelingen p {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    max-width: 50%;
+    justify-self: center;
 }
 
 .information {
@@ -286,3 +288,4 @@ body {
     font-weight: bold;
     font-size: 0.9em;
 }
+
