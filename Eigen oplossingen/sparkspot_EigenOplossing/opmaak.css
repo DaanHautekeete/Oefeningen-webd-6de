@@ -93,13 +93,15 @@ body {
     width: 100%;
 }
 
-#hero .button {
+#hero .button, .why-us .information .button {
     background-color: #9FFF13;
     color: black;
     width: fit-content;
 
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     
 
     border-radius: 3em;
@@ -289,3 +291,44 @@ body {
     font-size: 0.9em;
 }
 
+/* Waarom voor ons kiezen */
+.why-us {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    background-color: #F3F4F6;
+    border-radius: 2em;
+
+    padding: 3em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.why-us .image {
+    width: 45%;
+}
+
+.why-us .image img {
+    width: 100%;
+}
+
+.why-us .information {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.why-us .information h2 {
+    font-size: 1.3em;
+    font-family: CaviarDreams_Bold;
+
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.why-us .information img {
+    width: 50%;
+}
