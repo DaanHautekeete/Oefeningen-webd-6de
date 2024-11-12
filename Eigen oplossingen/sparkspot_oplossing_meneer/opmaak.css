@@ -69,15 +69,26 @@ form label {
     font-size: 0.8em;
 }
 
-form input {
+form input, form select {
     display: inline-block;
     padding: 0.5em;
     width: 60%;
+
 }
 
 form p {
     margin-bottom: 0.5em;
 }
+
+input::placeholder {
+    color: darkblue;
+}
+
+input[type="submit"] {
+    background-color: #9FFF45;
+    border: none;
+}
+
 .wrapper {
     width: 80%;
     margin-left: auto;

@@ -35,7 +35,16 @@
             <h2>Parkeerplek toevoegen</h2>
             <p><label>Voornaam</label> <input type="text" name="txtVnaam" required placeholder="Vul hier je voornaam in"></p>
             <p><label>Familienaam</label> <input type="text" name="txtFnaam" required placeholder="Vul hier je familienaam in"></p>
-            <p><label>E-mailadres</label> <input type="email" name="TxtEmail" required placeholder="Vul hier je e-mailadres in"></p>
+            <p>
+                <label>Gemeente</label>
+                <select name="cboGemeente">
+                    <option>Aalter</option>
+                    <option>Adegem</option>
+                    <option>Ardooie</option>
+                    <option>Jodiogne</option>
+                    <option value="Jodiogne">Geldenaken</option>
+                </select>
+            </p>
             <p><label></label> <input type="submit" name="btnVerstuur" value="Verstuur parkeerplek"></p>
 
         </form>
