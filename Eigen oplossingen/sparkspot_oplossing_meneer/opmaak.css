@@ -50,7 +50,34 @@ nav li:hover {
     border-bottom: solid 5px #9FFF45;
 }
 
+/* Form */
+form {
+    border: solid 1px black;
+    background-color: #DFE1CC;
+    padding: 0.5em;
+    margin-top: 1em;
+    width: 60%;
+}
 
+form h2 {
+    font-size: 1em;
+}
+
+form label {
+    display: inline-block;
+    width: 30%;
+    font-size: 0.8em;
+}
+
+form input {
+    display: inline-block;
+    padding: 0.5em;
+    width: 60%;
+}
+
+form p {
+    margin-bottom: 0.5em;
+}
 .wrapper {
     width: 80%;
     margin-left: auto;

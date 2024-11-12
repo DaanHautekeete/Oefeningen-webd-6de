@@ -30,8 +30,17 @@
         <div class="tekst">
         <h2>Park, Charge & Visit&nbsp;stress-free</h1>
         <p>Parkeren met SparkSpot is simpel en voordelig. Boek een parkeerplek, oprit of garage bij locals, waarvan veel locaties EV-laadpunten hebben. Wij zijn de perfecte oplossing voor stedelijke reizigers of duurzame pendelaars, terwijl je ook de lokale gemeenschap steunt.</p>
-        <p class="knop">Parkeerplek toevoegen</p>
+        
+        <form name="frmParkeerplek" method="post">
+            <h2>Parkeerplek toevoegen</h2>
+            <p><label>Voornaam</label> <input type="text" name="txtVnaam" required placeholder="Vul hier je voornaam in"></p>
+            <p><label>Familienaam</label> <input type="text" name="txtFnaam" required placeholder="Vul hier je familienaam in"></p>
+            <p><label>E-mailadres</label> <input type="email" name="TxtEmail" required placeholder="Vul hier je e-mailadres in"></p>
+            <p><label></label> <input type="submit" name="btnVerstuur" value="Verstuur parkeerplek"></p>
+
+        </form>
         </div>
+        
         <div class="foto"><img src='images/park1.jpg'></div>
         <div class="foto"><img src='images/park2.jpg'></div>
     </div>
