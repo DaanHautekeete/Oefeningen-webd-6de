@@ -51,7 +51,7 @@ nav li:hover {
 }
 
 /* Form */
-form {
+#form1{
     border: solid 1px black;
     background-color: #DFE1CC;
     padding: 0.5em;
@@ -59,35 +59,59 @@ form {
     width: 60%;
 }
 
-form h2 {
+#form1 h2 {
     font-size: 1em;
 }
 
-form label {
+#form1 label {
     display: inline-block;
     width: 30%;
     font-size: 0.8em;
 }
 
-form input, form select {
+#form1 input, #form1 select {
     display: inline-block;
     padding: 0.5em;
     width: 60%;
 
 }
 
-form p {
+#form1 p, #form2 .kolom p {
     margin-bottom: 0.5em;
 }
 
-input::placeholder {
+#form1 input::placeholder {
     color: darkblue;
 }
 
-input[type="submit"] {
+#form1 input[type="submit"] {
     background-color: #9FFF45;
     border: none;
 }
+
+#form2 {
+    border: solid 1px black;
+    background-color: #DFE1CC;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+#form2 .rij {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form2 .kolom {
+    width: 30%;
+    padding: 0.5em;
+}
+
+#form2 .kolom label {
+    width: 30%;
+}
+
+
+
 
 .wrapper {
     width: 80%;
