@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+  font-family: CaviarDreams_Bold;
+  src: url(./fonts/CaviarDreams_Bold.ttf);
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.5em;
+  border-bottom: 4px solid #E1143C;
+}
+
+#menu .logo {
+  width: 80%;
+  margin-left: 2em;
+}
+
+#menu .navigatie {
+  width: 20%;
+  margin-right: 3em;
+}
+
+#menu .navigatie ul li a {
+  display: block;
+  text-decoration: none;
+  color: #E1143C;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.1em;
+
+  border-bottom: 1px solid #E1143C;
+  padding-bottom: 0.2em;
+}
+
+#menu .navigatie ul {
+  list-style: square;
+  color: #E1143C;
+}
+
+#menu .navigatie ul li:last-of-type a{
+  color: #00124D;
+  border-bottom: none;
+}
+
+
+#menu .navigatie ul li:hover a {
+  color: white;
+  background-color: #E1143C;
+}
+
+#menu .navigatie .cta a:hover{
+  background-color: #00124D;
+  color: white;
+}
+
+#menu .navigatie .cta::marker {
+  color: #00124D;
+}
+
+#menu .navigatie .cta a:hover .cta::marker {
+  color: white;
+}
+
+.welkomsFoto .foto{
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  
+}
+
+.welkomsFoto  img {
+  width: 100%;
+}
+
+.welkomsFoto  p {
+  font-family: CaviarDreams_Bold;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .action {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+
+  background-color: #EEE;
+  padding: 0.5em;
+}
+
+.action .foto {
+  width: 30%;
+}
+
+.action .foto img {
+  width: 100%;
+}
+
+.action .tekst {
+  font-size: 1.2em;
+  width: 67%;
+}
+
+.action .tekst h2 {
+  color: #E1143C;
+  font-family: CaviarDreams_Bold;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.action .tekst p {
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+
+.action .tekst .button {
+  color: #E1143C;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+
+  border: 1px solid #E1143C;
+  width: fit-content;
+  padding: 0.5em;
+}
+
+.action .tekst .button i {
+  margin-right: 0.5em;
+}
+
+.leiding .personen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.6em;
+}
+
+.leiding h1 {
+  color: #E1143C;
+  font-size: 2.5em;
+  font-family: CaviarDreams_Bold;
+  
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.leiding .persoon {
+  width: 32%;
+}
+
+.leiding .personen img{
+  width: 100%;
+}
+
+.persoon .info {
+  height: 30%;
+  width: 100%;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0em;
+
+  background-color: #00124D;
+
+  font-size: 1em;
+  font-weight: 500;
+
+}
+
+.persoon .info h3 {
+  color: #E1143C;
+}
+
+.persoon .info p, h3 {
+  margin-left: 0.5em;
+}
+
+.persoon .info p {
+  color: white;
+}
+
+.persoon .foto-info {
+  position: relative;
+}
+
+.persoon:hover .info{
+  display: flex;
+}
+
+.foto-deelnemen {
+  width: 100%;
+}
+
+.foto-deelnemen img {
+  width: 100%;
+}
+
+.deelnemen {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.deelnemen h1 {
+  font-family: CaviarDreams_Bold;
+  color: #E1143C;
+}
