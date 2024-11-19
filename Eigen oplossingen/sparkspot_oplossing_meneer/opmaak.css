@@ -99,20 +99,63 @@ nav li:hover {
 #form2 .rij {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2em;
 }
 
 #form2 .kolom {
-    width: 30%;
+    width: 33%;
     padding: 0.5em;
 }
 
-#form2 .kolom label {
+#form2 .kolom p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form2 .kolom p label {
     width: 30%;
 }
 
+#form2 input, #form2 textarea {
+    flex: 1;
+}
 
 
+#form2 input.groupelement1 {
+    width: 2em;
+    margin-right: 0.5em;
+}
 
+#form2 select {
+    font-size: 0.8em;
+}
+
+#form2 fieldset {
+    padding: 1em;
+}
+#form2 fieldset input {
+    flex: 0;
+}
+
+#form2 .kolom fieldset p{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+}
+
+
+#form2 #kolomVoorKnop {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form2 #kolomVoorKnop input {
+    width: 100%;
+    background-color: #9FFF13;
+    padding: 1em;
+}
 .wrapper {
     width: 80%;
     margin-left: auto;
