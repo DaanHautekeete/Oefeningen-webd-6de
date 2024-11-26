@@ -205,17 +205,24 @@ h2 {
     padding-left:15%;
     padding-right: 15%;
 }
-.zoekboekparkeer {
+
+/* .zoekboekparkeer {
 display: flex;
 justify-content: space-between;
 margin-top: 3em;
 margin-bottom: 3em;
+} */
+
+.zoekboekparkeer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1em;
 }
 .zoekboekparkeer h2 {
     font-size: 1.3em;
 }
 .zoek, .boek, .parkeer {
-    width: 32%;
+    /* width: 32%; */
     border-radius: 2em;
     padding: 1.5em;
 }
