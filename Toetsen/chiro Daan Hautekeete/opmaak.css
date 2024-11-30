@@ -192,6 +192,9 @@ body {
   bottom: 0em;
 
   background-color: #00124D;
+  opacity: 0.7;
+
+  
 
   font-size: 1em;
   font-weight: 500;
@@ -218,13 +221,6 @@ body {
   display: flex;
 }
 
-.foto-deelnemen {
-  width: 100%;
-}
-
-.foto-deelnemen img {
-  width: 100%;
-}
 
 .deelnemen {
   margin-top: 2em;
@@ -234,4 +230,41 @@ body {
 .deelnemen h1 {
   font-family: CaviarDreams_Bold;
   color: #E1143C;
+}
+
+.foto-deelnemen {
+  margin-bottom: 2em;
+}
+
+.foto-deelnemen img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.foto-deelnemen img:hover {
+  filter: grayscale(0%);
+}
+
+#slotfoto img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+#slotfoto img:hover {
+  filter: grayscale(0%);
+}
+
+
+/* Extra */
+.aankondiging {
+  width: 20%;
+  position: fixed;
+  top: 1em;
+  left: 40%;
+  z-index: 100;
+
+}
+
+.aankondiging img {
+  width: 100%;
 }
