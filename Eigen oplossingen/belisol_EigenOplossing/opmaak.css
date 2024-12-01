@@ -146,7 +146,7 @@ p.aanvraag-offerte {
   margin-bottom: 1em;
 }
 
-.soort h2 {
+.soort h2, .isolatie h2, .veiligheid h2 {
   font-size: 1.4em;
   color: #00468E;
   margin-bottom: 0.8em;
@@ -157,4 +157,44 @@ p.aanvraag-offerte {
 
   position: relative;
   left: 1em;
+}
+
+/* Isolatie - veiligheid */
+#info-iso-veiligheid {
+  display: flex;
+  justify-content: space-between;
+}
+.isolatie, .veiligheid {
+  width: 45%;
+  border: 1px solid #00468E;
+  padding: 0.8em;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  position: relative;
+}
+
+.isolatie:hover, .veiligheid:hover {
+  background-color: #637081;
+  color: white;
+}
+
+.isolatie:hover h2, .veiligheid:hover h2 {
+  color: white;
+}
+
+.isolatie img, .veiligheid img{
+  display: none;
+}
+
+.isolatie:hover img, .veiligheid:hover img {
+  display: inline;
+  position: absolute;
+
+  right: 0.5em;
+  bottom: 0.2em;
+
+  width: 30%;
 }
