@@ -10,6 +10,12 @@ body {
   margin-bottom: 1em;
 }
 
+/* lettertypes */
+@font-face {
+  font-family: LouisGeorgeCafe;
+  src: url(fonts/LouisGeorgeCafe.ttf);
+}
+
 .wrapper {
   width: 80%;
   margin-left: auto;
@@ -152,7 +158,7 @@ p.aanvraag-offerte {
 }
 
 /* Soorten ramen */
-.soorten-ramen h1{
+.soorten-ramen h1, #getuigenissen h1{
   color: #00468E;
   
   font-size: 3em;
@@ -184,7 +190,7 @@ p.aanvraag-offerte {
   margin-bottom: 1em;
 }
 
-.soort h2, .isolatie h2, .veiligheid h2 {
+.soort h2, .isolatie h2, .veiligheid h2{
   font-size: 1.4em;
   color: #00468E;
   margin-bottom: 0.8em;
@@ -235,4 +241,50 @@ p.aanvraag-offerte {
   bottom: 0.2em;
 
   width: 30%;
+}
+
+/* Getuigenissen */
+
+.getuigenis {
+  display: flex;
+  gap: 5px;
+
+  margin-bottom: 5px;
+}
+
+.getuigenis .foto {
+  width: 30%;
+}
+
+.getuigenis .foto img {
+  width: 100%;
+}
+
+.getuigenis .tekst {
+  width: 70%;
+  padding: 1em;
+  background-color: #EEE;
+  border-top: 0.5em solid orange;
+}
+
+.fa-quote-right {
+  color: orange;
+}
+
+.getuigenis h3 {
+  font-family: LouisGeorgeCafe;
+  color: #00468E;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.getuigenis p.functie {
+  color: white;
+  background: orange;
+  font-weight: bold;
+  padding: 0.6em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  width: fit-content;
 }
