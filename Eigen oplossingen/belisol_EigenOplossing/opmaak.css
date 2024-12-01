@@ -7,7 +7,6 @@ body {
   font-size: 1em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-  margin-bottom: 1em;
 }
 
 /* lettertypes */
@@ -287,4 +286,33 @@ p.aanvraag-offerte {
   margin-top: 0.8em;
   margin-bottom: 0.8em;
   width: fit-content;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 1em;
+
+  padding: 1em;
+  
+  background-color: #00468E;
+  color: white;
+
+}
+
+footer .kolom h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+
+footer .kolom p {
+  margin-bottom: 0.4em;
+}
+
+footer .kolom .fa-brands {
+  font-size: 1.4em;
+  margin-right: 0.5em;
 }
