@@ -94,7 +94,8 @@ nav .links li:hover a {
     width: 100%;
 }
 
-.hero p.toevoegen {
+.hero p.toevoegen, .waarom-kiezen .uitleg p.deelnemen {
+    font-size: 1.4em;
     background-color: #9FFF13;
     color: black;
     width: fit-content;
@@ -120,7 +121,7 @@ nav .links li:hover a {
     font-size: 1.5em;
 }
 
-.how-it-works h2, .aanbevelingen-info h2 {
+.how-it-works h2, .aanbevelingen-info h2, .waarom-kiezen .uitleg h2 {
     font-family: CaviardreamsBold;
 }
 
@@ -252,4 +253,35 @@ nav .links li:hover a {
     text-align: center;
     font-weight: bold;
     font-size: 0.9em;
+}
+
+/* Waarom voor ons kiezen */
+.waarom-kiezen {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    background-color: #F3F4F6;
+    border-radius: 2em;
+
+    padding: 3em;
+}
+
+.waarom-kiezen .foto {
+    width: 45%;
+}
+
+.waarom-kiezen .foto img {
+    width: 100%;
+}
+
+.waarom-kiezen .uitleg  {
+    width: 50%;
+}
+
+.waarom-kiezen .uitleg h2 {
+    font-size: 1.3em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
