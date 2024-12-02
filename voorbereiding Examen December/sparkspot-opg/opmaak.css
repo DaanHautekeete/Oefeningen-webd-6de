@@ -120,6 +120,10 @@ nav .links li:hover a {
     font-size: 1.5em;
 }
 
+.how-it-works h2, .aanbevelingen-info h2 {
+    font-family: CaviardreamsBold;
+}
+
 /* Zoek-boek-parkeer */
 .zoek-boek-parkeer {
     margin-top: 3em;
@@ -182,6 +186,8 @@ nav .links li:hover a {
     padding-bottom: 1em;
     padding-left: 2.5em;
     padding-right: 2.5em;
+
+    margin-bottom: 2em;
 }
 
 .populaire-bestemmingen h2 {
@@ -220,4 +226,30 @@ nav .links li:hover a {
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
+}
+
+
+/* Aanbevelingen */
+.aanbevelingen {
+    display: flex;
+    justify-content: space-between;
+}
+.aanbevelingen-info .info {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.aanbeveling {
+    width: 24%;
+}
+
+.aanbeveling img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.aanbeveling p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
 }
