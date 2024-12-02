@@ -49,7 +49,14 @@ nav .links ul a {
     font-variant: small-caps;
 }
 
+nav .links li {
+    border-bottom: 5px solid white;
+}
+
 nav .links li:hover {
-    color: black;
     border-bottom: 5px solid #9FFF45;
+}
+
+nav .links li:hover a {
+    color: black;
 }
