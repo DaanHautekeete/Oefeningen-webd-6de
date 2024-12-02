@@ -9,6 +9,11 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: CaviarDreamsBold;
+  src: url(fonts/CaviarDreams_Bold.ttf);
+}
+
 /* Nav */
 nav {
   display: flex;
@@ -67,4 +72,30 @@ nav .links ul li:hover a, nav .links ul li:hover {
 
 nav .links li:last-child:hover {
   background-color: #00124D;
+}
+
+/* Leden */
+.header {
+  position: relative; 
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+
+.header img {
+  width: 100%;
+}
+
+.header h1 {
+  width: 60%;
+  font-family: CaviarDreamsBold;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+
+  position: absolute;
+  top: 1em;
+  left: 20%;
+
+  text-align: center;
 }
