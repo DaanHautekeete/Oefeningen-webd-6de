@@ -222,3 +222,16 @@ nav .links li:last-child:hover {
 .opsplitsing:hover img {
   filter: grayscale(0%);
 }
+
+/* Extra opdracht 7 - 30 jaar 't Rotje */
+nav .gebeurtenis {
+  width: 20%;
+  position: fixed;
+  top: 1em;
+  left: 40%;
+  z-index: 100;
+}
+
+nav .gebeurtenis img {
+  width: 100%;
+}
