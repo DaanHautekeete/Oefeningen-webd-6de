@@ -74,7 +74,7 @@ nav .links li:hover a {
     margin-bottom: 1em;
 }
 
-.hero h2, .zoek-boek-parkeer h2 {
+.hero h2, .zoek-boek-parkeer h2, .populaire-bestemmingen h2 {
     font-family: CaviardreamsBold;
     font-size: 3em;
     margin-bottom: 0.5em;
@@ -170,4 +170,54 @@ nav .links li:hover a {
     position: absolute;
     right: 1em;
     bottom: 1em;
+}
+
+
+/* Populaire bestemmingen */
+.populaire-bestemmingen {
+    background-color: #CFFFA2;
+    border-radius: 2em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+.populaire-bestemmingen h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.bestemmingen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestemming {
+    width: 16%;
+    position: relative;
+}
+
+.bestemming img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.bestemming p {
+    display: none;
+}
+
+.bestemming:hover p {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
 }
