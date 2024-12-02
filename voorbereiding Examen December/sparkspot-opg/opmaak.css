@@ -22,6 +22,11 @@ body {
     src: url(fonts/CaviarDreams.ttf);
 }
 
+@font-face {
+    font-family: CaviardreamsBold;
+    src: url(fonts/CaviarDreams_Bold.ttf);
+}
+
 /* Menu */
 nav {
     display: flex;
@@ -60,3 +65,45 @@ nav .links li:hover {
 nav .links li:hover a {
     color: black;
 }
+
+/* Hero */
+.hero {
+    display: flex;
+
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.hero h2 {
+    font-family: CaviardreamsBold;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero .tekst {
+    width: 54%;
+}
+
+
+.hero .image {
+    width: 22%;
+    margin-right: 0.5em;
+}
+
+.hero .image img {
+    width: 100%;
+}
+
+.hero p.toevoegen {
+    background-color: #9FFF13;
+    color: black;
+    width: fit-content;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-top: 1em;
+
+    border-radius: 2em;
+}
+
