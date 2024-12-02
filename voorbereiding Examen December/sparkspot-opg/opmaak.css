@@ -3,3 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Algemene instellingen */
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI';
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: Caviardreams;
+    src: url(fonts/CaviarDreams.ttf);
+}
+
+/* Menu */
+nav {
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img {
+    width: 80%;
+}
+
+
+nav .links ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+nav .links ul a {
+    color: darkgrey;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+nav .links li:hover {
+    color: black;
+    border-bottom: 5px solid #9FFF45;
+}
