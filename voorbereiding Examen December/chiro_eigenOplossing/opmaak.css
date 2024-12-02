@@ -153,7 +153,7 @@ nav .links li:last-child:hover {
 }
 
 /* Leiding */
-.leiding h1 {
+.leiding h1, h1.meedoen {
   color: #E1143C;
   font-size: 2.5em;
   font-family: CaviarDreamsBold;
@@ -207,3 +207,18 @@ nav .links li:last-child:hover {
   display: block;
 }
 
+/* Ik wil naar de chiro */
+.opsplitsing {
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.opsplitsing img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.opsplitsing:hover img {
+  filter: grayscale(0%);
+}
