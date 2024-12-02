@@ -151,3 +151,59 @@ nav .links li:last-child:hover {
   padding: 0.5em;
   width: fit-content;
 }
+
+/* Leiding */
+.leiding h1 {
+  color: #E1143C;
+  font-size: 2.5em;
+  font-family: CaviarDreamsBold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.personen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.6em;
+}
+
+.leiding .persoon {
+  width: 32%;
+  position: relative;
+}
+
+.leiding .persoon img {
+  width: 100%;
+  height: 100%;
+}
+
+.persoon .beschrijving {
+  display: none;
+  width: 100%;
+  height: 30%;
+  background-color: #00124D;
+  color: white;
+  opacity: 0.7;
+
+  position: absolute;
+  top: 70%;
+
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.persoon .beschrijving h3 {
+  color: #E1143C;
+  margin-left: 0.6em;
+
+}
+
+.beschrijving p {
+  margin-left: 0.6em;
+}
+
+.persoon:hover .beschrijving{
+  display: block;
+}
+
