@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #E51147;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  font-size: 1em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  box-sizing: border-box;
+}
+
+/* Navigatie */
+nav {
+  height: 3.5em;
+  display: flex;
+}
+
+nav .logo {
+  width: 100px;
+  height: 45px;
+  margin-right: 4em;
+}
+
+nav .logo img{
+  width: 100%;
+}
+
+nav .links ul{
+  display: flex;
+  list-style-type: none;
+}
+
+nav .links ul li {
+  padding: 0.4em;
+  margin-right: 1em;
+  position: relative;
+}
+
+nav .links a {
+  color: #E51147;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+nav .links li:hover a{
+  color: white;
+}
+
+nav .links li:hover {
+  background-color: #E51147;
+}
+
+nav .links li ul{
+  display: none;
+}
+
+nav .links li:hover ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0em;
+
+  width: 200%;
+  background-color: #E51147;
+}
+
+nav .links li:hover ul li {
+  border-top: 1px solid white;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-right: 0em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  z-index: 100;
+}
+
+nav .links li:hover ul li:first-child {
+  border-top: none;
+}
+
+nav .links li:hover ul a {
+  color: white;
+  font-size: 1em;
+}
+
+nav .links li ul li:hover {
+  background-color: white;
+}
+
+nav .links li ul li:hover a{
+  color: #E51147;
+} 
+
+/* Banner */
+#banner img{
+  width: 100%;
+}
+
+#banner .foto {
+  position: relative;
+}
+
+#banner .tekst {
+  position: absolute;
+  top: 100%;
+  color: white;
+  background-color: #E51147;
+  width: 20%;
+  padding: 2em;
+}
