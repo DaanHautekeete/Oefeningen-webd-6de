@@ -74,7 +74,7 @@ nav .links li:hover a {
     margin-bottom: 1em;
 }
 
-.hero h2 {
+.hero h2, .zoek-boek-parkeer h2 {
     font-family: CaviardreamsBold;
     font-size: 3em;
     margin-bottom: 0.5em;
@@ -118,4 +118,56 @@ nav .links li:hover a {
     line-height: 1.8em;   
 
     font-size: 1.5em;
+}
+
+/* Zoek-boek-parkeer */
+.zoek-boek-parkeer {
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.zoek-boek-parkeer h2 {
+    font-size: 1.3em;
+}
+
+.zoek, .boek, .parkeer {
+    width: 32%;
+    padding: 1.5em;
+    border-radius: 2em;
+    border: 3px solid transparent;
+}
+
+.zoek {
+    background-color: #9FFF45;
+    position: relative;
+}
+
+.boek {
+    background-color: #CFFFA2;
+    position: relative;
+
+}
+
+.parkeer {
+    background-color: #F3F4F6;
+    position: relative;
+
+}
+
+.zoek:hover, .boek:hover, .parkeer:hover {
+    border: 3px solid darkred;
+}
+.zoek .icon img, .boek .icon img, .parkeer .icon img {
+    display: none;
+}
+
+.zoek:hover .icon img, .boek:hover .icon img, .parkeer:hover .icon img{
+    display: block;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
 }
