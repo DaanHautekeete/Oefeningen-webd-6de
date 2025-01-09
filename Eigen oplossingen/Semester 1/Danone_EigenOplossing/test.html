@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" rel="stylesheet">
+        .test{
+            display: grid;
+            /* Kan met px, fr, em, %, etc. */
+            /* grid-template-columns: 10fr 20fr 10fr 20fr; Is hetzelfde als 1f 2fr 1fr 2fr */
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 300px;
+            gap: 10px;
+        }
+        .col{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <div class="col">A</div>
+        <div class="col">B</div>
+        <div class="col">C</div>
+        <div class="col">D</div>
+        <div class="col">E</div>
+        <div class="col">F</div>
+        <div class="col">G</div>
+        <div class="col">H</div>
+        <div class="col">I</div>
+    </div>
+</body>
+</html>

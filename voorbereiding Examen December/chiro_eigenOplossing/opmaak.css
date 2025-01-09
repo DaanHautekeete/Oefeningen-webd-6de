@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: CaviarDreamsBold;
+  src: url(fonts/CaviarDreams_Bold.ttf);
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 0.5em;
+  border-bottom: 4px solid #E1143C;
+}
+
+nav .logo img{
+  margin-left: 2em;
+  width: 80%;
+}
+
+nav .links {
+  width: 20%;
+  align-self: flex-end;
+}
+
+nav .links ul {
+  list-style: square;
+}
+
+nav .links ul, nav .links ul a{
+  color: #E1143C;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.1em;
+}
+
+nav .links ul li:last-child, nav .links ul li:last-child a {
+  color: #00124D;
+}
+
+nav .links a {
+  text-decoration: none;
+}
+
+nav .links ul li {
+  padding-bottom: 0.2em;
+  margin-right: 3em;
+  border-bottom: 1px solid #E1143C;
+}
+
+nav .links ul li:last-child {
+  border-bottom: none;
+}
+
+nav .links li:hover {
+  background-color: #E1143C;
+}
+
+nav .links ul li:hover a, nav .links ul li:hover {
+  color: white;
+}
+
+nav .links li:last-child:hover {
+  background-color: #00124D;
+}
+
+/* Leden */
+.header {
+  position: relative; 
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+
+.header img {
+  width: 100%;
+}
+
+.header h1 {
+  width: 60%;
+  font-family: CaviarDreamsBold;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+
+  position: absolute;
+  top: 1em;
+  left: 20%;
+
+  text-align: center;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Acties */
+.actie {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.actie .foto {
+  width: 30%;
+}
+
+.actie .foto img {
+  width: 100%;
+  height: 100%;
+}
+
+.actie .tekst {
+  width: 67%;
+  background-color: #EEE;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+.actie .tekst h2 {
+  color: #E1143C;
+  font-family: CaviarDreamsBold;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.actie .tekst p {
+  margin-bottom: 1em;
+  line-height: 1.4em;
+}
+
+.actie .tekst p.info {
+  color: #E1143C;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  border: 1px solid #E1143C;
+  padding: 0.5em;
+  width: fit-content;
+}
+
+/* Leiding */
+.leiding h1, h1.meedoen {
+  color: #E1143C;
+  font-size: 2.5em;
+  font-family: CaviarDreamsBold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.personen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.6em;
+}
+
+.leiding .persoon {
+  width: 32%;
+  position: relative;
+}
+
+.leiding .persoon img {
+  width: 100%;
+  height: 100%;
+}
+
+.persoon .beschrijving {
+  display: none;
+  width: 100%;
+  height: 30%;
+  background-color: #00124D;
+  color: white;
+  opacity: 0.7;
+
+  position: absolute;
+  top: 70%;
+
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.persoon .beschrijving h3 {
+  color: #E1143C;
+  margin-left: 0.6em;
+
+}
+
+.beschrijving p {
+  margin-left: 0.6em;
+}
+
+.persoon:hover .beschrijving{
+  display: block;
+}
+
+/* Ik wil naar de chiro */
+.opsplitsing {
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.opsplitsing img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.opsplitsing:hover img {
+  filter: grayscale(0%);
+}
+
+/* Extra opdracht 7 - 30 jaar 't Rotje */
+nav .gebeurtenis {
+  width: 20%;
+  position: fixed;
+  top: 1em;
+  left: 40%;
+  z-index: 100;
+}
+
+nav .gebeurtenis img {
+  width: 100%;
+}

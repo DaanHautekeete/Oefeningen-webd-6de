@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* lettertypes */
+@font-face {
+  font-family: LouisGeorgeCafe;
+  src: url(fonts/LouisGeorgeCafe.ttf);
+}
+
+.wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00468E;
+  color: white;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+nav {
+  width: 50%;
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 2em;
+
+  list-style: none;
+}
+
+nav li {
+  position: relative;
+  padding-bottom: 0.5em;
+  border-top: solid #00468E 0.3em;
+}
+
+nav li:hover {
+  border-top: solid orange 0.3em;
+}
+
+/* Submenu */
+nav li ul {
+  display: none;
+}
+
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  width: 120%;
+  padding: 0.4em;
+
+  background-color: white;
+}
+
+nav li:hover li {
+  text-align: left;
+
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+
+  border-bottom: 1px solid darkred;
+  border-top: none;
+  
+}
+
+nav li:hover li a{
+  color: #00468E;
+}
+
+nav li:hover li:last-child {
+  border-bottom: none;
+}
+
+
+p.opvragen {
+  background-color: #E84A39;
+  border: 1px solid red;
+
+  padding: 0.5em;
+  display: inline;
+}
+
+
+/* header */
+header {
+  position: relative;
+
+}
+header img{
+  width: 100%;
+}
+
+#headertekst{
+  width: 35%;
+
+  position: absolute;
+  left: 5em;
+  bottom: 5em;
+
+  background-color: rgba(0, 70, 136, 0.3);
+  color: white;
+
+  padding: 0.5em;
+
+  line-height: 1.4em;
+  font-size: 1.6em;
+}
+
+p.promo {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+p.aanvraag-offerte {
+  width: 50%;
+  padding: 0.3em;
+  margin-top: 1em;
+
+  background-color: white;
+  color: #00468E;
+
+  border-radius: 5em;
+
+  text-align: center;
+}
+
+/* Soorten ramen */
+.soorten-ramen h1, #getuigenissen h1{
+  color: #00468E;
+  
+  font-size: 3em;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  border-top: 3px solid orange;
+}
+
+.soorten {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.5em;
+}
+
+.soort {
+  width: 30%;
+  background-color: #EEE;
+
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 0.8em;
+}
+
+.soort img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.soort h2, .isolatie h2, .veiligheid h2{
+  font-size: 1.4em;
+  color: #00468E;
+  margin-bottom: 0.8em;
+}
+
+.soort ul {
+  list-style-type: square;
+
+  position: relative;
+  left: 1em;
+}
+
+/* Isolatie - veiligheid */
+#info-iso-veiligheid {
+  display: flex;
+  justify-content: space-between;
+}
+.isolatie, .veiligheid {
+  width: 45%;
+  border: 1px solid #00468E;
+  padding: 0.8em;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  position: relative;
+}
+
+.isolatie:hover, .veiligheid:hover {
+  background-color: #637081;
+  color: white;
+}
+
+.isolatie:hover h2, .veiligheid:hover h2 {
+  color: white;
+}
+
+.isolatie img, .veiligheid img{
+  display: none;
+}
+
+.isolatie:hover img, .veiligheid:hover img {
+  display: inline;
+  position: absolute;
+
+  right: 0.5em;
+  bottom: 0.2em;
+
+  width: 30%;
+}
+
+/* Getuigenissen */
+
+.getuigenis {
+  display: flex;
+  gap: 5px;
+
+  margin-bottom: 5px;
+}
+
+.getuigenis .foto {
+  width: 30%;
+}
+
+.getuigenis .foto img {
+  width: 100%;
+}
+
+.getuigenis .tekst {
+  width: 70%;
+  padding: 1em;
+  background-color: #EEE;
+  border-top: 0.5em solid orange;
+}
+
+.fa-quote-right {
+  color: orange;
+}
+
+.getuigenis h3 {
+  font-family: LouisGeorgeCafe;
+  color: #00468E;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.getuigenis p.functie {
+  color: white;
+  background: orange;
+  font-weight: bold;
+  padding: 0.6em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  width: fit-content;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 1em;
+
+  padding: 1em;
+  
+  background-color: #00468E;
+  color: white;
+
+}
+
+footer .kolom h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+
+footer .kolom p {
+  margin-bottom: 0.4em;
+}
+
+footer .kolom .fa-brands {
+  font-size: 1.4em;
+  margin-right: 0.5em;
+}

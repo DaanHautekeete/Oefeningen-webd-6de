@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Algemene instellingen */
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI';
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: Caviardreams;
+    src: url(fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: CaviardreamsBold;
+    src: url(fonts/CaviarDreams_Bold.ttf);
+}
+
+/* Menu */
+nav {
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img {
+    width: 80%;
+}
+
+
+nav .links ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+nav .links ul a {
+    color: darkgrey;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+nav .links li {
+    border-bottom: 5px solid white;
+}
+
+nav .links li:hover {
+    border-bottom: 5px solid #9FFF45;
+}
+
+nav .links li:hover a {
+    color: black;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.hero h2, .zoek-boek-parkeer h2, .populaire-bestemmingen h2 {
+    font-family: CaviardreamsBold;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero .tekst {
+    width: 54%;
+}
+
+
+.hero .image {
+    width: 22%;
+    margin-right: 0.5em;
+}
+
+.hero .image img {
+    width: 100%;
+}
+
+.hero p.toevoegen, .waarom-kiezen .uitleg p.deelnemen {
+    font-size: 1.4em;
+    background-color: #9FFF13;
+    color: black;
+    width: fit-content;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-top: 1em;
+
+    border-radius: 2em;
+}
+
+/* How it works */
+.how-it-works {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    text-align: center;
+    line-height: 1.8em;   
+
+    font-size: 1.5em;
+}
+
+.how-it-works h2, .aanbevelingen-info h2, .waarom-kiezen .uitleg h2 {
+    font-family: CaviardreamsBold;
+}
+
+/* Zoek-boek-parkeer */
+.zoek-boek-parkeer {
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.zoek-boek-parkeer h2 {
+    font-size: 1.3em;
+}
+
+.zoek, .boek, .parkeer {
+    width: 32%;
+    padding: 1.5em;
+    border-radius: 2em;
+    border: 3px solid transparent;
+}
+
+.zoek {
+    background-color: #9FFF45;
+    position: relative;
+}
+
+.boek {
+    background-color: #CFFFA2;
+    position: relative;
+
+}
+
+.parkeer {
+    background-color: #F3F4F6;
+    position: relative;
+
+}
+
+.zoek:hover, .boek:hover, .parkeer:hover {
+    border: 3px solid darkred;
+}
+.zoek .icon img, .boek .icon img, .parkeer .icon img {
+    display: none;
+}
+
+.zoek:hover .icon img, .boek:hover .icon img, .parkeer:hover .icon img{
+    display: block;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+
+/* Populaire bestemmingen */
+.populaire-bestemmingen {
+    background-color: #CFFFA2;
+    border-radius: 2em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+
+    margin-bottom: 2em;
+}
+
+.populaire-bestemmingen h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.bestemmingen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestemming {
+    width: 16%;
+    position: relative;
+}
+
+.bestemming img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.bestemming p {
+    display: none;
+}
+
+.bestemming:hover p {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+/* Aanbevelingen */
+.aanbevelingen {
+    display: flex;
+    justify-content: space-between;
+}
+.aanbevelingen-info .info {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.aanbeveling {
+    width: 24%;
+}
+
+.aanbeveling img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.aanbeveling p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Waarom voor ons kiezen */
+.waarom-kiezen {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    background-color: #F3F4F6;
+    border-radius: 2em;
+
+    padding: 3em;
+}
+
+.waarom-kiezen .foto {
+    width: 45%;
+}
+
+.waarom-kiezen .foto img {
+    width: 100%;
+}
+
+.waarom-kiezen .uitleg  {
+    width: 50%;
+}
+
+.waarom-kiezen .uitleg h2 {
+    font-size: 1.3em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
