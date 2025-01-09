@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="opmaak.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <title>Sparkspot</title>
+</head>
+<body>
+    <div class="wrapper">
+   <div id="menu" >
+        <div id="logo"><img src='images/logo_sparkspot.jpg'></div>
+        <nav>
+            <ul>
+                <li><a href="#">Startpagina</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Over Sparkspot</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact</a></li>
+                              
+            </ul>
+        </nav>
+   </div>
+    <div class="fotocontainer">
+        <div class="tekst">
+        <h2>Park, Charge & Visit&nbsp;stress-free</h1>
+        <p>Parkeren met SparkSpot is simpel en voordelig. Boek een parkeerplek, oprit of garage bij locals, waarvan veel locaties EV-laadpunten hebben. Wij zijn de perfecte oplossing voor stedelijke reizigers of duurzame pendelaars, terwijl je ook de lokale gemeenschap steunt.</p>
+        
+        <form name="frmParkeerplek" method="post" id="form1">
+            <h2>Parkeerplek toevoegen</h2>
+            <p><label>Voornaam</label> <input type="text" name="txtVnaam" required placeholder="Vul hier je voornaam in"></p>
+            <p><label>Familienaam</label> <input type="text" name="txtFnaam" required placeholder="Vul hier je familienaam in"></p>
+            <p>
+                <label>Gemeente</label>
+                <select name="cboGemeente">
+                    <option>Aalter</option>
+                    <option>Adegem</option>
+                    <option>Ardooie</option>
+                    <option>Jodiogne</option>
+                    <option value="Jodiogne">Geldenaken</option>
+                </select>
+            </p>
+            <p><label></label><input type="submit" name="btnVerstuur" value="Verstuur parkeerplek"></p>
+
+        </form>
+        </div>
+        
+        <div class="foto"><img src='images/park1.jpg'></div>
+        <div class="foto"><img src='images/park2.jpg'></div>
+    </div>
+
+    <form method="post" id="form2" name="frmParkeerplek2">
+        <h2>Parkeerplek toevoegen</h2>
+        <div class="rij">
+            <div class="kolom">
+                <p><label>Voornaam</label><input type="text" name="txtVoornaam"></p>
+                <p><label>Adres</label><input type="text" name="txtAdres" placeholder="Straat + nr (+ bus)"></p>
+                <p><label>Email</label><input type="text" name="txtEmail"></p>
+                <p><label>Startdatum</label><input type="datetime-local" name="DtmStartDatum"></p>
+                <p><label>Opmerkingen</label><textarea name="txtOpmerking" rows="3" placeholder="Opmerkingen"></textarea></p>
+            </div>
+            <div class="kolom">
+                <p><label>Familienaam</label><input type="text" name="txtFamilienaam"></p>
+                <p>
+                    <label>Woonplaats</label>
+                    
+                    <input type="text" name="txtPostnummer" placeholder="Pnr" class="groupelement1">
+                    <Select class="groupElement2">
+                        <option>Aalter</option>
+                        <option>Aarlen</option>
+                        <option>Aarschot</option>
+                        <option>Aartselaar</option>
+                        <option>Aat</option>
+                        <option>Affligem</option>
+                        <option>Aiseau-Presles</option>
+                        <option>Alken</option>
+                        <option>Alveringem</option>
+                        <option>Amay</option>
+                        <option>Amel</option>
+                        <option>Andenne</option>
+                        <option>Anderlecht</option>
+                        <option>Anderlues</option>
+                        <option>Anhée</option>
+                        <option>Ans</option>
+                        <option>Anthisnes</option>
+                        <option>Antoing</option>
+                        <option>Antwerpen</option>
+                        <option>Anzegem</option>
+                        <option>Ardooie</option>
+                        <option>Arendonk</option>
+                        <option>As</option>
+                        <option>Asse</option>
+                        <option>Assenede</option>
+                        <option>Assesse</option>
+                        <option>Attert</option>
+                        <option>Aubange</option>
+                        <option>Aubel</option>
+                        <option>Avelgem</option>
+                        <option>Awans</option>
+                        <option>Aywaille</option>
+                        <option>Baarle-Hertog</option>
+                        <option>Baelen</option>
+                        <option>Balen</option>
+                        <option>Bastenaken</option>
+                        <option>Beaumont</option>
+                        <option>Beauraing</option>
+                        <option>Beernem</option>
+                        <option>Beerse</option>
+                        <option>Beersel</option>
+                        <option>Begijnendijk</option>
+                        <option>Bekkevoort</option>
+                        <option>Belœil</option>
+                        <option>Bergen</option>
+                        <option>Beringen</option>
+                        <option>Berlaar</option>
+                        <option>Berlare</option>
+                        <option>Berloz</option>
+                        <option>Bernissart</option>
+                        <option>Bertem</option>
+                        <option>Bertogne</option>
+                        <option>Bertrix</option>
+                        <option>Bevekom</option>
+                        <option>Bever</option>
+                        <option>Beveren</option>
+                        <option>Beyne-Heusay</option>
+                        <option>Bierbeek</option>
+                        <option>Bièvre</option>
+                        <option>Bilzen</option>
+                        <option>Binche</option>
+                        <option>Bitsingen</option>
+                        <option>Blankenberge</option>
+                        <option>Blégny</option>
+                        <option>Blieberg</option>
+                        <option>Bocholt</option>
+                        <option>Boechout</option>
+                        <option>Bonheiden</option>
+                        <option>Boom</option>
+                        <option>Boortmeerbeek</option>
+                        <option>Borgloon</option>
+                        <option>Borgworm</option>
+                        <option>Bornem</option>
+                        <option>Borsbeek</option>
+                        <option>Bouillon</option>
+                        <option>Boussu</option>
+                        <option>Boutersem</option>
+                        <option>Braives</option>
+                        <option>Brakel</option>
+                        <option>Brasschaat</option>
+                        <option>Brecht</option>
+                        <option>Bredene</option>
+                        <option>Bree</option>
+                        <option>Brugelette</option>
+                        <option>Brugge</option>
+                        <option>Brunehaut</option>
+                        <option>Brussel</option>
+                        <option>Buggenhout</option>
+                        <option>Büllingen</option>
+                        <option>Burdinne</option>
+                        <option>Burg-Reuland</option>
+                        <option>Bütgenbach</option>
+                        <option>Celles</option>
+                        <option>Cerfontaine</option>
+                        <option>Chapelle-lez-Herlaimont</option>
+                        <option>Charleroi</option>
+                        <option>Chastre</option>
+                        <option>Châtelet</option>
+                        <option>Chaudfontaine</option>
+                        <option>Chaumont-Gistoux</option>
+                        <option>Chièvres</option>
+                        <option>Chimay</option>
+                        <option>Chiny</option>
+                        <option>Ciney</option>
+                        <option>Clavier</option>
+                        <option>Colfontaine</option>
+                        <option>Comblain-au-Pont</option>
+                        <option>Courcelles</option>
+                        <option>Court-Saint-Étienne</option>
+                        <option>Couvin</option>
+                        <option>Crisnée</option>
+                        <option>Dalhem</option>
+                        <option>Damme</option>
+                        <option>Daverdisse</option>
+                        <option>De Haan</option>
+                        <option>De Panne</option>
+                        <option>De Pinte</option>
+                        <option>Deerlijk</option>
+                        <option>Deinze</option>
+                        <option>Denderleeuw</option>
+                        <option>Dendermonde</option>
+                        <option>Dentergem</option>
+                        <option>Dessel</option>
+                        <option>Destelbergen</option>
+                        <option>Diepenbeek</option>
+                        <option>Diest</option>
+                        <option>Diksmuide</option>
+                        <option>Dilbeek</option>
+                        <option>Dilsen-Stokkem</option>
+                        <option>Dinant</option>
+                        <option>Dison</option>
+                        <option>Doische</option>
+                        <option>Donceel</option>
+                        <option>Doornik</option>
+                        <option>Dour</option>
+                        <option>Drogenbos</option>
+                        <option>Duffel</option>
+                        <option>Durbuy</option>
+                        <option>Ecaussines</option>
+                        <option>Edegem</option>
+                        <option>Edingen</option>
+                        <option>Eeklo</option>
+                        <option>Éghezée</option>
+                        <option>Eigenbrakel</option>
+                        <option>Elsene</option>
+                        <option>Elzele</option>
+                        <option>Engis</option>
+                        <option>Érezée</option>
+                        <option>Erpe-Mere</option>
+                        <option>Erquelinnes</option>
+                        <option>Esneux</option>
+                        <option>Essen</option>
+                        <option>Estinnes</option>
+                        <option>Etalle</option>
+                        <option>Etterbeek</option>
+                        <option>Eupen</option>
+                        <option>Evere</option>
+                        <option>Evergem</option>
+                        <option>Faimes</option>
+                        <option>Farciennes</option>
+                        <option>Fauvillers</option>
+                        <option>Fernelmont</option>
+                        <option>Ferrières</option>
+                        <option>Fexhe-le-Haut-Clocher</option>
+                        <option>Flémalle</option>
+                        <option>Fléron</option>
+                        <option>Fleurus</option>
+                        <option>Floreffe</option>
+                        <option>Florennes</option>
+                        <option>Florenville</option>
+                        <option>Fontaine-l'Evêque</option>
+                        <option>Fosses-la-Ville</option>
+                        <option>Frameries</option>
+                        <option>Frasnes-lez-Anvaing</option>
+                        <option>Froidchapelle</option>
+                        <option>Galmaarden</option>
+                        <option>Ganshoren</option>
+                        <option>Gavere</option>
+                        <option>Gedinne</option>
+                        <option>Geel</option>
+                        <option>Geer</option>
+                        <option>Geetbets</option>
+                        <option>Geldenaken</option>
+                        <option>Gembloers</option>
+                        <option>Genepiën</option>
+                        <option>Genk</option>
+                        <option>Gent</option>
+                        <option>Geraardsbergen</option>
+                        <option>Gerpinnes</option>
+                        <option>Gesves</option>
+                        <option>Gingelom</option>
+                        <option>Gistel</option>
+                        <option>Glabbeek</option>
+                        <option>Gooik</option>
+                        <option>Gouvy</option>
+                        <option>Grâce-Hollogne</option>
+                        <option>Graven</option>
+                        <option>Grimbergen</option>
+                        <option>Grobbendonk</option>
+                        <option>Haacht</option>
+                        <option>Haaltert</option>
+                        <option>Habay</option>
+                        <option>Halen</option>
+                        <option>Halle</option>
+                        <option>Ham</option>
+                        <option>Hamme</option>
+                        <option>Hamoir</option>
+                        <option>Hamois</option>
+                        <option>Hamont-Achel</option>
+                        <option>Ham-sur-Heure-Nalinnes</option>
+                        <option>Hannuit</option>
+                        <option>Harelbeke</option>
+                        <option>Hasselt</option>
+                        <option>Hastière</option>
+                        <option>Havelange</option>
+                        <option>Hechtel-Eksel</option>
+                        <option>Heers</option>
+                        <option>Heist-op-den-Berg</option>
+                        <option>Hélécine</option>
+                        <option>Hemiksem</option>
+                        <option>Hensies</option>
+                        <option>Herbeumont</option>
+                        <option>Herent</option>
+                        <option>Herentals</option>
+                        <option>Herenthout</option>
+                        <option>Herk-de-Stad</option>
+                        <option>Herne</option>
+                        <option>Héron</option>
+                        <option>Herselt</option>
+                        <option>Herstal</option>
+                        <option>Herstappe</option>
+                        <option>Herve</option>
+                        <option>Herzele</option>
+                        <option>Heusden-Zolder</option>
+                        <option>Heuvelland</option>
+                        <option>Hoegaarden</option>
+                        <option>Hoei</option>
+                        <option>Hoeilaart</option>
+                        <option>Hoeselt</option>
+                        <option>Holsbeek</option>
+                        <option>Honnelles</option>
+                        <option>Hooglede</option>
+                        <option>Hoogstraten</option>
+                        <option>Horebeke</option>
+                        <option>Hotton</option>
+                        <option>Houffalize</option>
+                        <option>Houthalen-Helchteren</option>
+                        <option>Houthulst</option>
+                        <option>Houyet</option>
+                        <option>Hove</option>
+                        <option>Huldenberg</option>
+                        <option>Hulshout</option>
+                        <option>Ichtegem</option>
+                        <option>Ieper</option>
+                        <option>Incourt</option>
+                        <option>Ingelmunster</option>
+                        <option>Itter</option>
+                        <option>Izegem</option>
+                        <option>Jabbeke</option>
+                        <option>Jalhay</option>
+                        <option>Jemeppe-sur-Sambre</option>
+                        <option>Jette</option>
+                        <option>Juprelle</option>
+                        <option>Jurbeke</option>
+                        <option>Kalmthout</option>
+                        <option>Kampenhout</option>
+                        <option>Kapellen</option>
+                        <option>Kapelle-op-den-Bos</option>
+                        <option>Kaprijke</option>
+                        <option>Kasteelbrakel</option>
+                        <option>Kasterlee</option>
+                        <option>Keerbergen</option>
+                        <option>Kelmis</option>
+                        <option>Kinrooi</option>
+                        <option>Kluisbergen</option>
+                        <option>Knokke-Heist</option>
+                        <option>Koekelare</option>
+                        <option>Koekelberg</option>
+                        <option>Koksijde</option>
+                        <option>Komen-Waasten</option>
+                        <option>Kontich</option>
+                        <option>Kortemark</option>
+                        <option>Kortenaken</option>
+                        <option>Kortenberg</option>
+                        <option>Kortessem</option>
+                        <option>Kortrijk</option>
+                        <option>Kraainem</option>
+                        <option>Kruibeke</option>
+                        <option>Kruisem*</option>
+                        <option>Kuurne</option>
+                        <option>La Bruyère</option>
+                        <option>La Louvière</option>
+                        <option>La Roche-en-Ardenne</option>
+                        <option>Laakdal</option>
+                        <option>Laarne</option>
+                        <option>Lanaken</option>
+                        <option>Landen</option>
+                        <option>Langemark-Poelkapelle</option>
+                        <option>Lasne</option>
+                        <option>Le Roeulx</option>
+                        <option>Lebbeke</option>
+                        <option>Lede</option>
+                        <option>Ledegem</option>
+                        <option>Léglise</option>
+                        <option>Lendelede</option>
+                        <option>Lennik</option>
+                        <option>Lens</option>
+                        <option>Leopoldsburg</option>
+                        <option>Les Bons Villers</option>
+                        <option>Lessen</option>
+                        <option>Leuven</option>
+                        <option>Leuze-en-Hainaut</option>
+                        <option>Libin</option>
+                        <option>Libramont-Chevigny</option>
+                        <option>Lichtervelde</option>
+                        <option>Liedekerke</option>
+                        <option>Lier</option>
+                        <option>Lierde</option>
+                        <option>Lierneux</option>
+                        <option>Lievegem*</option>
+                        <option>Lijsem</option>
+                        <option>Lille</option>
+                        <option>Limburg</option>
+                        <option>Linkebeek</option>
+                        <option>Lint</option>
+                        <option>Linter</option>
+                        <option>Lobbes</option>
+                        <option>Lochristi</option>
+                        <option>Lokeren</option>
+                        <option>Lommel</option>
+                        <option>Londerzeel</option>
+                        <option>Lontzen</option>
+                        <option>Lo-Reninge</option>
+                        <option>Lubbeek</option>
+                        <option>Luik</option>
+                        <option>Lummen</option>
+                        <option>Maarkedal</option>
+                        <option>Maaseik</option>
+                        <option>Maasmechelen</option>
+                        <option>Machelen</option>
+                        <option>Maldegem</option>
+                        <option>Malle</option>
+                        <option>Malmedy</option>
+                        <option>Manage</option>
+                        <option>Manhay</option>
+                        <option>Marche-en-Famenne</option>
+                        <option>Marchin</option>
+                        <option>Martelange</option>
+                        <option>Mechelen</option>
+                        <option>Meerhout</option>
+                        <option>Meise</option>
+                        <option>Meix-devant-Virton</option>
+                        <option>Melle</option>
+                        <option>Menen</option>
+                        <option>Merbes-le-Château</option>
+                        <option>Merchtem</option>
+                        <option>Merelbeke</option>
+                        <option>Merksplas</option>
+                        <option>Mesen</option>
+                        <option>Messancy</option>
+                        <option>Mettet</option>
+                        <option>Meulebeke</option>
+                        <option>Middelkerke</option>
+                        <option>Modave</option>
+                        <option>Moerbeke</option>
+                        <option>Moeskroen</option>
+                        <option>Mol</option>
+                        <option>Momignies</option>
+                        <option>Mont-de-l'Enclus</option>
+                        <option>Montigny-le-Tilleul</option>
+                        <option>Mont-Saint-Guibert</option>
+                        <option>Moorslede</option>
+                        <option>Morlanwelz</option>
+                        <option>Mortsel</option>
+                        <option>Musson</option>
+                        <option>Namen</option>
+                        <option>Nandrin</option>
+                        <option>Nassogne</option>
+                        <option>Nazareth</option>
+                        <option>Neufchâteau</option>
+                        <option>Neupré</option>
+                        <option>Niel</option>
+                        <option>Nieuwerkerken</option>
+                        <option>Nieuwpoort</option>
+                        <option>Nijlen</option>
+                        <option>Nijvel</option>
+                        <option>Ninove</option>
+                        <option>Oerle</option>
+                        <option>Ohey</option>
+                        <option>Olen</option>
+                        <option>Olne</option>
+                        <option>Onhaye</option>
+                        <option>Oostende</option>
+                        <option>Oosterzele</option>
+                        <option>Oostkamp</option>
+                        <option>Oostrozebeke</option>
+                        <option>Opwijk</option>
+                        <option>Opzullik</option>
+                        <option>Orp-Jauche</option>
+                        <option>Ottignies-Louvain-la-Neuve</option>
+                        <option>Oudenaarde</option>
+                        <option>Oudenburg</option>
+                        <option>Oudergem</option>
+                        <option>Oud-Heverlee</option>
+                        <option>Oudsbergen</option>
+                        <option>Oud-Turnhout</option>
+                        <option>Ouffet</option>
+                        <option>Oupeye</option>
+                        <option>Overijse</option>
+                        <option>Paliseul</option>
+                        <option>Pecq</option>
+                        <option>Peer</option>
+                        <option>Pelt</option>
+                        <option>Pepingen</option>
+                        <option>Pepinster</option>
+                        <option>Péruwelz</option>
+                        <option>Perwijs</option>
+                        <option>Philippeville</option>
+                        <option>Pittem</option>
+                        <option>Pont-à-Celles</option>
+                        <option>Poperinge</option>
+                        <option>Profondeville</option>
+                        <option>Putte</option>
+                        <option>Puurs-Sint-Amands</option>
+                        <option>Quaregnon</option>
+                        <option>Quévy</option>
+                        <option>Quiévrain</option>
+                        <option>Raeren</option>
+                        <option>Ramillies</option>
+                        <option>Ranst</option>
+                        <option>Ravels</option>
+                        <option>Rebecq</option>
+                        <option>Remicourt</option>
+                        <option>Rendeux</option>
+                        <option>Retie</option>
+                        <option>Riemst</option>
+                        <option>Rijkevorsel</option>
+                        <option>Rixensart</option>
+                        <option>Rochefort</option>
+                        <option>Roeselare</option>
+                        <option>Ronse</option>
+                        <option>Roosdaal</option>
+                        <option>Rotselaar</option>
+                        <option>Rouvroy</option>
+                        <option>Ruiselede</option>
+                        <option>Rumes</option>
+                        <option>Rumst</option>
+                        <option>Sainte-Ode</option>
+                        <option>Saint-Georges-sur-Meuse</option>
+                        <option>Saint-Ghislain</option>
+                        <option>Saint-Hubert</option>
+                        <option>Saint-Léger</option>
+                        <option>Saint-Nicolas</option>
+                        <option>Sambreville</option>
+                        <option>Sankt Vith</option>
+                        <option>Schaarbeek</option>
+                        <option>Schelle</option>
+                        <option>Scherpenheuvel-Zichem</option>
+                        <option>Schilde</option>
+                        <option>Schoten</option>
+                        <option>Seneffe</option>
+                        <option>Seraing</option>
+                        <option>'s-Gravenbrakel</option>
+                        <option>Sint-Agatha-Berchem</option>
+                        <option>Sint-Genesius-Rode</option>
+                        <option>Sint-Gillis</option>
+                        <option>Sint-Gillis-Waas</option>
+                        <option>Sint-Jans-Molenbeek</option>
+                        <option>Sint-Joost-ten-Node</option>
+                        <option>Sint-Katelijne-Waver</option>
+                        <option>Sint-Lambrechts-Woluwe</option>
+                        <option>Sint-Laureins</option>
+                        <option>Sint-Lievens-Houtem</option>
+                        <option>Sint-Martens-Latem</option>
+                        <option>Sint-Niklaas</option>
+                        <option>Sint-Pieters-Leeuw</option>
+                        <option>Sint-Pieters-Woluwe</option>
+                        <option>Sint-Truiden</option>
+                        <option>Sivry-Rance</option>
+                        <option>Sombreffe</option>
+                        <option>Somme-Leuze</option>
+                        <option>Soumagne</option>
+                        <option>Spa</option>
+                        <option>Spiere-Helkijn</option>
+                        <option>Sprimont</option>
+                        <option>Stabroek</option>
+                        <option>Staden</option>
+                        <option>Stavelot</option>
+                        <option>Steenokkerzeel</option>
+                        <option>Steenput</option>
+                        <option>Stekene</option>
+                        <option>Stoumont</option>
+                        <option>Tellin</option>
+                        <option>Temse</option>
+                        <option>Tenneville</option>
+                        <option>Terhulpen</option>
+                        <option>Ternat</option>
+                        <option>Tervuren</option>
+                        <option>Tessenderlo</option>
+                        <option>Theux</option>
+                        <option>Thimister-Clermont</option>
+                        <option>Thuin</option>
+                        <option>Tielt</option>
+                        <option>Tielt-Winge</option>
+                        <option>Tienen</option>
+                        <option>Tinlot</option>
+                        <option>Tintigny</option>
+                        <option>Tongeren</option>
+                        <option>Torhout</option>
+                        <option>Tremelo</option>
+                        <option>Trois-Ponts</option>
+                        <option>Trooz</option>
+                        <option>Tubeke</option>
+                        <option>Turnhout</option>
+                        <option>Ukkel</option>
+                        <option>Vaux-sur-Sûre</option>
+                        <option>Verlaine</option>
+                        <option>Verviers</option>
+                        <option>Veurne</option>
+                        <option>Vielsalm</option>
+                        <option>Villers-la-Ville</option>
+                        <option>Villers-le-Bouillet</option>
+                        <option>Vilvoorde</option>
+                        <option>Viroinval</option>
+                        <option>Virton</option>
+                        <option>Vleteren</option>
+                        <option>Vloesberg</option>
+                        <option>Voeren</option>
+                        <option>Vorselaar</option>
+                        <option>Vorst</option>
+                        <option>Vosselaar</option>
+                        <option>Vresse-sur-Semois</option>
+                        <option>Waasmunster</option>
+                        <option>Wachtebeke</option>
+                        <option>Walcourt</option>
+                        <option>Walhain</option>
+                        <option>Wanze</option>
+                        <option>Waregem</option>
+                        <option>Wasseiges</option>
+                        <option>Waterloo</option>
+                        <option>Watermaal-Bosvoorde</option>
+                        <option>Waver</option>
+                        <option>Weismes</option>
+                        <option>Welkenraedt</option>
+                        <option>Wellen</option>
+                        <option>Wellin</option>
+                        <option>Wemmel</option>
+                        <option>Wervik</option>
+                        <option>Westerlo</option>
+                        <option>Wetteren</option>
+                        <option>Wevelgem</option>
+                        <option>Wezembeek-Oppem</option>
+                        <option>Wezet</option>
+                        <option>Wichelen</option>
+                        <option>Wielsbeke</option>
+                        <option>Wijnegem</option>
+                        <option>Willebroek</option>
+                        <option>Wingene</option>
+                        <option>Wommelgem</option>
+                        <option>Wortegem-Petegem</option>
+                        <option>Wuustwezel</option>
+                        <option>Yvoir</option>
+                        <option>Zandhoven</option>
+                        <option>Zaventem</option>
+                        <option>Zedelgem</option>
+                        <option>Zele</option>
+                        <option>Zelzate</option>
+                        <option>Zemst</option>
+                        <option>Zinnik</option>
+                        <option>Zoersel</option>
+                        <option>Zonhoven</option>
+                        <option>Zonnebeke</option>
+                        <option>Zottegem</option>
+                        <option>Zoutleeuw</option>
+                        <option>Zuienkerke</option>
+                        <option>Zulte</option>
+                        <option>Zutendaal</option>
+                        <option>Zwalm</option>
+                        <option>Zwevegem</option>
+                        <option>Zwijndrecht</option>
+
+                        <option value="Jodiogne">Geldenaken</option>
+                    </Select>
+                </p>
+                <p><label>Telefoon</label><input type="text" name="txtTelefoon"></p>
+                <p><label>Einddatum</label><input type="datetime-local" name="dtmEindDatum"></p>
+            </div>
+            <div class="kolom">
+                <fieldset name="Type parkeerplaats" >
+                    <legend>Type parkeerplaats</legend>
+
+                    <p><input type="radio" name="keuzeParkeerplaats" id="radio1" value="Open lucht"><label for="radio1">Open lucht</label></p>
+                    <p><input type="radio" name="keuzeParkeerplaats" id="radio2" value="Overdekt"><label for="radio2">Overdekt</label></p>
+                    <p><input type="radio" name="keuzeParkeerplaats" id="radio3" value="Gesloten box"><label for="radio3">Gesloten box</label></p>
+                </fieldset>
+
+                <fieldset name="Extras" >
+                    <legend>Extras</legend>
+
+                    <p><input type="checkbox" name="keuzeParkeerplaats" id="checkbox1" value="Bewaakte parking"><label for="checkbox1">Bewaakte parking</label></p>
+                    <p><input type="checkbox" name="keuzeParkeerplaats" id="checkbox2" value="Autolift"><label for="checkbox2">Autolift</label></p>
+                    <p><input type="checkbox" name="keuzeParkeerplaats" id="checkbox3" value="24/7 open"><label for="checkbox3">24/7 open</label></p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="rij">
+            <div id="kolomVoorKnop">
+                <p><input type="button" name="btnVerstuur" value="Verstuur Parkeerplek"></p>
+            </div>
+        </div>
+        
+    </form>
+
+    <div class="howitworks">
+        <h2>How it works</h2>
+<p>Vind moeiteloos een parkeerplek met SparkSpot's intuïtieve platform. Zoek naar parkeermogelijkheden, boek veilig met ons transparant betalingssysteem en verlies geen kostbare tijd, wetende dat je plek voor je is gereserveerd.</p>
+    </div>
+
+    <div class="zoekboekparkeer">
+        <div class="zoek">
+            <h2></i>1 Zoek</h2>
+            <p>Voer het adres van je accommodatie of gewenste locatie in om de ideale parkeerplek te vinden bij vertrouwde locals, verfijn je opties met filters voor EV-opladen of andere voorzieningen, en geniet van een stressvrije ervaring.</p>
+            <img src="images/picto_sparkspot.jpg">
+        </div>
+        <div class="boek">
+            <h2>2 Boek</h2>
+            <p>Reserveer moeiteloos je plek met ons intuïtieve boekingsproces, ondersteund door een robuust en veilig betalingssysteem dat een volledige gemoedsrust garandeert.</p>
+            <img src="images/picto_sparkspot.jpg">
+        </div>
+        <div class="parkeer">
+            <h2>3 Parkeer</h2>
+            <p>Kom aan op je bestemming waar je gereserveerde parkeerplaats op je wacht, door het ontvangen van uitgebreide instructies en communiceer direct indien nodig met je Host.</p>
+            <img src="images/picto_sparkspot.jpg">
+        </div>
+    </div>
+    <div class="bestemmingen">
+        <h2>Populaire bestemmingen om te parkeren</h2>
+        <div class="allebestemmingen">
+        <div class="bestemming">
+            <img src='images/bestemming_Brugge.jpg'>
+            <p>Brugge</p>
+        </div>
+        <div class="bestemming">
+            <img src='images/bestemming_Gent.jpg'>
+            <p>Gent</p>
+        </div>
+        <div class="bestemming">
+            <img src='images/bestemming_Oostende.jpg'>
+            <p>Oostende</p>
+        </div>
+        <div class="bestemming">
+            <img src='images/bestemming_Knokke-Heist.jpg'>
+            <p>Knokke-Heist</p>
+        </div>
+        <div class="bestemming">
+            <img src='images/bestemming_Antwerpen.jpg'>
+            <p>Antwerpen</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="howitworks">
+    <h2>Ontdek onze aanbevelingen</h2>
+<p>SparkSpot's zorgvuldig geselecteerde plekken om te verblijven, te proeven en te genieten tijdens je citytrip.</p>
+</div>
+
+<div class="allebeste">
+    <div class="beste">
+        <img src='images/beste_restaurants.jpg'>
+        <p>10 beste restaurants in Brugge</p>
+    </div>
+    <div class="beste">
+        <img src='images/beste_shopping.jpg'>
+        <p>10 beste conceptwinkels in Gent</p>
+    </div>
+    <div class="beste">
+        <img src='images/beste_boetiekhotels.jpg'>
+        <p>10 beste boetiekhotels in Knokke</p>
+    </div>
+    <div class="beste">
+        <img src='images/beste_brunch.jpg'>
+        <p>10 beste brunchplekken in Antwerpen</p>
+    </div>
+</div>
+<div class="waarom">
+    <div class="foto">
+        <img src="images/laden_elektriciteit.jpg">
+    </div>
+    <div class="tekst">
+        <img src="images/logo_sparkspot-zonder-achtergrond.png">
+        <h2>Waarom voor ons kiezen?</h2>
+        <p>Maximaliseer de waarde en inkomsten van je parkeerplek met SparkSpot. Ons efficiënte platform verbindt jouw plek met degenen die er behoefte aan hebben, wat zorgt voor consistent gebruik. Sluit je aan bij ons om het stadsleven te verbeteren en bij te dragen aan duurzaamheid.</p>
+        <p class="knop">Word een Sparkspotter</p>
+    </div>
+
+</div>
+
+
+</div>
+    </body>
+</html>
